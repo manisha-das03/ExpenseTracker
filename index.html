@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/360cd3db50.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  
+</head>
+<body>
+    <section id="title">
+        <div class="container-fluid">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#title">wallet<i class="fa-solid fa-dollar-sign"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#tracker">Tracker</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+            
+
+              <!-- Title -->
+            <div class="row">
+                <div class="col-lg-6">
+                  <h1>Track your daily expenses on your fingertips.</h1>
+                  <button type="button" class="btn btn-dark btn-lg download-button" onclick="alert('Create wallet!')"><i class="fa-solid fa-wallet"></i> Create Wallet</button>
+                  <button type="button" class="btn btn-outline-light btn-lg download-button" onclick="location.href='#tracker'"><i class="fa-solid fa-dollar-sign"></i> Manage Expenses</button>
+                </div>
+               
+               <div class="col-lg-6 img-col">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img class="title-img" src="images/track.jpg" alt="Avatar" style="width:500px;height:400px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <img class="title-img" src="images/expense.jpg" alt="Avatar" style="width:500px;height:400px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="row">
+          
+        <div class="about-box col-lg-4">
+          <i class="icon fa-solid fa-piggy-bank fa-4x"></i>
+          <h3 class="about-heading">Easy to use</h3>
+          <p>A simple application to track your daily expenses.</p>
+         </div>
+    
+         <div class="about-box col-lg-4"> 
+          <i class="icon fa-solid fa-chart-line fa-4x"></i>
+          <h3 class="about-heading">Super savings</h3>
+          <p>Increase your savings on the go.</p>
+         </div>
+
+         <div class="about-box col-lg-4">
+          <i class="icon fa-solid fa-user-group fa-4x"></i>
+          <h3 class="about-heading">Splitwise money</h3>
+          <p>Split the expenses among your friends.</p>
+         </div>
+
+      </div>
+    </section>
+
+     <!-- Tracker -->
+
+    <section id="tracker">
+      <div class="row">
+        <div class="col-md-4">
+          
+          <div class="dollar-element">
+            <h1 class="tracker-heading">Lets Track your expenses with our very own expense tracker.</h1>
+
+            <div class="dollar-container">
+              <img src="images/dollar.png" alt="Sideways rotating dollar bill" class="rotating-dollar">
+              <h2>Calculate your Transactions by toggling over the expense and income button</h2>
+            </div>
+            <div class="dollar-container">
+              <img src="images/dollar.png" alt="Sideways rotating dollar bill" class="rotating-dollar">
+              <h2>Add the basic details such as name,amount and date of transaction</h2>
+            </div>
+            <div class="dollar-container">
+              <img src="images/dollar.png" alt="Sideways rotating dollar bill" class="rotating-dollar">
+              <h2>Check your total balance by clicking on the submit button</h2>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-8">
+          <main>
+            <header>
+              <div>
+                <h5>Total Balance</h5>
+                <span id="balance">$0.00</span>
+              </div>
+              <div>
+                <h5>Income</h5>
+                <span id="income">$0.00</span>
+              </div>
+              <div>
+                <h5>Expense</h5>
+                <span id="expense">$0.00</span>
+              </div>
+            </header>
+            <section>
+              <h3>Transactions</h3>
+              <ul id="transactionList"></ul>
+              <div id="status"></div>
+            </section>
+            
+            <section>
+              <h3>Add Transaction</h3>
+  
+              <form id="transactionForm">
+                <div>
+                  <label for="type">
+                    <input type="checkbox" name="type" id="type"/>
+                    <div class="option">
+                      <span>Expense</span>
+                      <span>Income</span>
+                    </div>
+                  </label>
+                </div>
+                <div>
+                  <label for="name">Name</label>
+                  <input type="text" name="name" required/>
+                </div>
+                <div>
+                  <label for="amount">Amount</label>
+                  <input 
+                    type="number" 
+                    name="amount" 
+                    value="0"
+                    min="0.01"
+                    step="0.01"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="date">Date</label>
+                  <input type="date" name="date" required/>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+            </section>
+           </main>
+        </div>
+      </div>
+        
+        
+      
+    </section>
+
+
+
+     <!-- Footer -->
+
+  <footer id="footer">
+    <i class="social-icon fa-brands fa-facebook"></i>
+    <i class="social-icon fa-brands fa-twitter"></i>
+    <i class="social-icon fa-brands fa-instagram"></i>
+    <i class="social-icon fa-solid fa-envelope"></i>  
+
+    <!--Copyright-->
+
+    <div>
+      &copy;
+      <span id="copyright"></span>
+      wallet$
+  </div>
+
+  </footer>
+
+  
+  <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
